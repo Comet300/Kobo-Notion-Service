@@ -1,0 +1,25 @@
+{
+  "name": "kobo-notion-service",
+  "version": "1.0.0",
+  "description": "This service is meant to synchronise the highlights made on a kobo reader to a page in Notion.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmo300/Kobo-Notion-Service.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmo300/Kobo-Notion-Service/issues"
+  },
+  "homepage": "https://github.com/vmo300/Kobo-Notion-Service#readme",
+  "dependencies": {
+    "@notionhq/client": "^2.2.3",
+    "better-sqlite3": "^8.0.1",
+    "dotenv": "^16.0.3"
+  }
+}
