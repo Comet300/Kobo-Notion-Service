@@ -1,6 +1,6 @@
 {
   "name": "kobo-notion-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This service is meant to synchronise the highlights made on a kobo reader to a page in Notion.",
   "main": "app.js",
   "scripts": {

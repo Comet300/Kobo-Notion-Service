@@ -18,12 +18,6 @@ books.forEach(async book => {
                         equals: Title,
                     }
                 },
-                {
-                    property:"isSynced",
-                    checkbox:{
-                        equals: false,
-                    }
-                }
             ]
         }
      })
@@ -31,7 +25,7 @@ books.forEach(async book => {
      const cases = {
         '0' : async () => {
             console.log(`Syncing ${Title}...`)
-            const highlights = await getHighlightsForBook(book).map(highlight => highlight.Text);
+            const highlights = await getHighlightsForBook(book);
             const page = await createPage({...book});
             await syncHighlights(page, highlights)
         },
